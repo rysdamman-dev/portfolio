@@ -6,10 +6,10 @@
 <title>Portfolio BTS SIO SISR – Sidi Amman Riffay</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
 <style>
-:root{--bg:#eef2f6;--surface:#fff;--ink:#14213d;--muted:#4a5a73;--line:#cfd8e3;--accent:#0b6e8a;--accent-ink:#fff;--soft:#dcebf1;
+:root{--bg:#f3f9fd;--surface:#fff;--ink:#0b2a4a;--muted:#46607a;--line:#c9dcea;--accent:#0a6ca3;--brand:#2fa9e0;--accent-ink:#06223d;--soft:#dff1fb;--red:#d7263d;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101826;--surface:#182336;--ink:#e8eef7;--muted:#a3b2c8;--line:#2a3a54;--accent:#6fc3df;--accent-ink:#0b1220;--soft:#1d3144}}
-:root[data-theme="dark"]{--bg:#101826;--surface:#182336;--ink:#e8eef7;--muted:#a3b2c8;--line:#2a3a54;--accent:#6fc3df;--accent-ink:#0b1220;--soft:#1d3144}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1a2e;--surface:#10263f;--ink:#eaf4fb;--muted:#9fb8cc;--line:#1f3a57;--accent:#5cc0ee;--brand:#2fa9e0;--accent-ink:#06223d;--soft:#143350;--red:#ff5a6e}}
+:root[data-theme="dark"]{--bg:#0a1a2e;--surface:#10263f;--ink:#eaf4fb;--muted:#9fb8cc;--line:#1f3a57;--accent:#5cc0ee;--brand:#2fa9e0;--accent-ink:#06223d;--soft:#143350;--red:#ff5a6e}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
@@ -17,13 +17,14 @@ h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15
 a{color:var(--accent)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+.band{height:8px;background:linear-gradient(90deg,var(--brand) 0 33.4%,#fff 33.4% 66.7%,var(--red) 66.7%);box-shadow:0 1px 0 var(--line)}
 nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;padding:1rem 0;font-weight:500}
 nav a{text-decoration:none;color:var(--muted)}
 nav a:hover{color:var(--accent)}
 .hero{display:grid;gap:2rem;grid-template-columns:1.1fr 1fr;align-items:center;padding:2.5rem 0 3.5rem}
 .hero h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:800;letter-spacing:-.02em}
 .hero p{color:var(--muted);max-width:34rem}
-.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:.7rem 1.2rem;border-radius:.4rem;text-decoration:none;font-weight:500;margin-top:.5rem}
+.btn{display:inline-block;background:var(--brand);color:var(--accent-ink);padding:.7rem 1.2rem;border-radius:.4rem;text-decoration:none;font-weight:500;margin-top:.5rem}
 .net{width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:.75rem}
 .net text{font:500 13px "IBM Plex Sans",sans-serif;fill:var(--ink)}
 .net .sub{fill:var(--muted);font-size:11px}
@@ -57,6 +58,7 @@ footer{padding:2rem 0;color:var(--muted);font-size:.9rem;border-top:1px solid va
 </style>
 </head>
 <body>
+<div class="band" aria-hidden="true"></div>
 <div class="wrap">
 <nav aria-label="Navigation"><a href="#parcours">Parcours</a><a href="#competences">Compétences</a><a href="#projets">Réalisations</a><a href="#veille">Veille</a><a href="#contact">Contact</a></nav>
 
