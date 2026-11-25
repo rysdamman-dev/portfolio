@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio BTS SIO SISR – Sidi Amman Riffay</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#0a1020;--card:#0e162a;--ink:#f1f5f9;--muted:#94a3b8;--line:#1e2a44;--blue:#3b82f6;--blue-ink:#60a5fa;--indigo:#4f46e5;--chip:#13203b;--btn:#f1f5f9;--btn-ink:#0a1020;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f7fc;--card:#fff;--ink:#0f172a;--muted:#52627a;--line:#d6dfec;--blue:#2563eb;--blue-ink:#1d4ed8;--chip:#e6edf9;--btn:#0f172a;--btn-ink:#fff;color-scheme:light}}
+:root[data-theme="light"]{--bg:#f4f7fc;--card:#fff;--ink:#0f172a;--muted:#52627a;--line:#d6dfec;--blue:#2563eb;--blue-ink:#1d4ed8;--chip:#e6edf9;--btn:#0f172a;--btn-ink:#fff;color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;color:var(--ink);font:400 1.02rem/1.6 "Schibsted Grotesk",system-ui,sans-serif;
+background:radial-gradient(55rem 28rem at 10% -5%,rgba(37,99,235,.28),transparent 60%),radial-gradient(40rem 30rem at 100% 45%,rgba(79,70,229,.2),transparent 60%),radial-gradient(circle,rgba(148,163,184,.13) 1px,transparent 1px) 0 0/24px 24px,var(--bg)}
+h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.02em}
+em{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;color:var(--blue)}
+a{color:var(--blue-ink)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1.25rem}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+nav{display:flex;align-items:center;gap:.4rem 1rem;flex-wrap:wrap;margin-top:.8rem;padding:.7rem 1rem;background:var(--card);border:1px solid var(--line);border-radius:1rem}
+.logo{display:flex;align-items:center;gap:.6rem;font-weight:800;margin-right:auto;text-decoration:none;color:var(--ink)}
+.logo i{font-style:normal;display:grid;place-items:center;width:2.1rem;height:2.1rem;border-radius:.6rem;background:linear-gradient(135deg,var(--blue),var(--indigo));color:#fff;font-size:.8rem}
+nav a.l{color:var(--muted);text-decoration:none;font-weight:500;padding:.3rem .6rem;border-radius:.5rem;font-size:.95rem}
+nav a.l:hover{color:var(--blue-ink);background:var(--chip)}
+.tg{font:inherit;cursor:pointer;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:.6rem;width:2.4rem;height:2.4rem}
+.hero{padding:5rem 0 3rem}
+.hero h1{font-size:clamp(2.8rem,9vw,5.6rem);font-weight:800}
+.hero h1 em{font-size:1.08em}
+.sub{margin:1.2rem 0;color:var(--blue-ink);font-size:.95rem;letter-spacing:.16em;text-transform:uppercase}
+.hero p{color:var(--muted);max-width:38rem;font-size:1.12rem}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+.btn{display:inline-block;font:inherit;font-weight:700;text-decoration:none;cursor:pointer;border:1px solid var(--line);padding:.8rem 1.3rem;border-radius:.7rem;background:var(--card);color:var(--ink)}
+.btn.w{background:var(--btn);color:var(--btn-ink);border-color:var(--btn)}
+.btn.b{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn.i{background:var(--indigo);border-color:var(--indigo);color:#fff}
+.stats{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));margin-top:3rem}
+.stats div,.card{background:var(--card);border:1px solid var(--line);border-radius:1rem;padding:1.3rem}
+.stats strong{display:block;font-size:2.2rem;font-weight:800;letter-spacing:-.02em}
+.stats b{display:block;color:var(--blue-ink);font-weight:700}
+.stats span{color:var(--muted);font-size:.93rem}
+section{padding:4.5rem 0 1rem}
+.hd{text-align:center;margin-bottom:2.2rem}
+.pill{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--line);background:var(--card);border-radius:2rem;padding:.25rem .9rem;color:var(--blue-ink);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase}
+.pill::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:var(--blue)}
+.hd h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;margin:1rem 0 .6rem}
+.hd h2 em{font-size:1.1em}
+.hd p{color:var(--muted);max-width:40rem;margin:0 auto}
+.about{display:grid;gap:1.5rem;grid-template-columns:1fr 1.7fr;align-items:start}
+.tag{display:inline-block;background:var(--chip);color:var(--blue-ink);border-radius:.4rem;padding:.15rem .6rem;font-size:.8rem}
+.about h3{font-size:1.5rem;margin:.7rem 0}
+.about p{color:var(--muted);margin:.4rem 0}
+.sk{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr))}
+.sk .card{text-align:center}
+.sk .n{display:grid;place-items:center;margin:0 auto .7rem;width:2.8rem;height:2.8rem;border-radius:.8rem;background:var(--chip);color:var(--blue-ink);font-size:.85rem}
+.sk h3{font-size:1.05rem}
+.sk p{margin:.4rem 0 0;color:var(--muted);font-size:.9rem}
+.todo{color:var(--muted);font-style:italic;text-align:center}
+.seg{display:flex;gap:.3rem;width:max-content;max-width:100%;margin:0 auto 1.8rem;padding:.3rem;background:var(--card);border:1px solid var(--line);border-radius:.8rem}
+.seg.f{border:0;background:none;padding:0;gap:.5rem;flex-wrap:wrap;justify-content:center}
+.seg button{font:inherit;font-weight:500;cursor:pointer;color:var(--muted);background:none;border:1px solid transparent;padding:.45rem 1rem;border-radius:.6rem}
+.seg.f button{border-color:var(--line);border-radius:2rem;background:var(--card)}
+.seg button[aria-pressed="true"]{background:var(--blue);color:#fff;border-color:var(--blue)}
+.seg.f button[aria-pressed="true"]{background:var(--btn);color:var(--btn-ink);border-color:var(--btn)}
+.cols{display:grid;gap:2rem;grid-template-columns:1fr 1fr}
+.cols h3{font-size:1.3rem;margin-bottom:1rem}
+.col .card{margin-bottom:1rem;border-left:3px solid var(--blue)}
+.date{float:right;background:var(--chip);color:var(--blue-ink);font-size:.8rem;padding:.2rem .7rem;border-radius:.5rem}
+.col h4{margin:.2rem 0;font-size:1.15rem}
+.col .who{color:var(--blue-ink);font-size:.9rem;font-weight:500}
+.col p{margin:.4rem 0 0;color:var(--muted)}
+.grid{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
+.pc{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.th{height:9rem;display:grid;place-items:center;background:linear-gradient(135deg,#1e3a8a,#4f46e5);color:#fff;font:italic 2.6rem "Instrument Serif",Georgia,serif;position:relative}
+.th span{position:absolute;top:.7rem;left:.8rem;font:500 .8rem "JetBrains Mono",monospace;opacity:.8}
+.pb{padding:1.2rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.pb h3{font-size:1.25rem}
+.pb p{margin:0;color:var(--muted)}
+.ft{display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:.9rem;margin-top:auto}
+.tags{display:flex;gap:.4rem;flex-wrap:wrap}
+.tags b{font:400 .75rem "JetBrains Mono",monospace;border:1px solid var(--line);border-radius:.4rem;padding:.1rem .5rem;color:var(--muted)}
+.ex{font:inherit;font-weight:700;color:var(--blue-ink);background:none;border:0;cursor:pointer}
+.hide{display:none!important}
+dialog{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:1rem;width:calc(100% - 2rem);max-width:44rem;padding:1.5rem;max-height:85vh}
+dialog::backdrop{background:rgba(2,6,16,.72)}
+dialog h3{font-size:1.6rem;margin-bottom:.5rem}
+dialog h4{margin:1.1rem 0 .3rem}
+dialog li{margin:.3rem 0}
+dialog code{background:var(--chip);padding:.05rem .35rem;border-radius:.3rem}
+.cx{float:right}
+.note{border-left:3px solid var(--blue);background:var(--chip);padding:.6rem .9rem;border-radius:.4rem;margin-top:1rem;font-size:.95rem}
+.ct{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));max-width:48rem;margin:0 auto}
+footer{margin-top:4rem;border-top:1px solid var(--line);background:var(--card);padding:2.2rem 0;color:var(--muted)}
+footer .wrap{display:grid;gap:1.5rem;grid-template-columns:2fr 1fr 1fr}
+footer h4{font:500 .8rem "JetBrains Mono",monospace;letter-spacing:.16em;text-transform:uppercase;margin:0 0 .6rem;color:var(--muted)}
+footer a{display:block;text-decoration:none;color:var(--muted);margin:.25rem 0}
+@media (max-width:800px){.about,.cols,footer .wrap{grid-template-columns:1fr}.hero{padding-top:3rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Navigation">
+<a class="logo" href="#home"><i>SR</i>S.RIFFAY</a>
+<a class="l" href="#about">À propos</a><a class="l" href="#certifications">Certifications</a><a class="l" href="#parcours">Parcours</a><a class="l" href="#projets">Projets</a><a class="l" href="#veille">Veille</a><a class="l" href="#contact">Contact</a>
+<button class="tg" id="tg" aria-label="Changer de thème">◐</button>
+</nav>
+
+<header class="hero" id="home">
+<h1>Sidi Amman <em>Riffay</em></h1>
+<div class="sub mono">BTS SIO option SISR · 2e année · Lycée Marie Curie, Tarbes</div>
+<p>Bienvenue sur mon portfolio. Je me forme à l’administration des systèmes et des réseaux : postes et serveurs Windows, services réseau et domaine Active Directory.</p>
+<div class="btns"><a class="btn w" href="#about">Découvrir mon profil</a><a class="btn b" href="#projets">Projets</a><a class="btn" href="#contact">Me contacter</a></div>
+<div class="stats">
+<div><strong>2e année</strong><b>BTS SIO SISR</b><span>Solutions d’infrastructure, systèmes et réseaux</span></div>
+<div><strong>3</strong><b>Réalisations</b><span>Windows 11, DHCP, AD DS et GPO</span></div>
+<div><strong>6</strong><b>Compétences clés</b><span>Systèmes, réseau, annuaire, virtualisation</span></div>
+<div><strong>Tarbes</strong><b>Lycée Marie Curie</b><span>Bloc 2 : administration systèmes et réseaux</span></div>
+</div>
+</header>
+</div>
+
+<main class="wrap">
+<section id="about">
+<div class="hd"><span class="pill mono">01 · À propos</span><h2>À propos <em>de moi</em></h2><p>Un profil orienté infrastructure, systèmes et réseaux, construit en formation et en pratique sur des maquettes virtualisées.</p></div>
+<div class="about">
+<div class="card"><span class="tag mono">Étudiant BTS SIO SISR</span><h3>Sidi Amman Riffay</h3><p>Étudiant en deuxième année de BTS SIO option SISR au lycée Marie Curie de Tarbes, je documente chaque installation pas à pas pour pouvoir la reproduire et l’expliquer.</p><p class="todo" style="text-align:left">À compléter : une phrase sur tes objectifs (poursuite d’études, alternance…) et ton CV.</p></div>
+<div class="sk">
+<div class="card"><div class="n mono">01</div><h3>Windows 11</h3><p>Installation et configuration d’un poste</p></div>
+<div class="card"><div class="n mono">02</div><h3>Windows Server</h3><p>Serveur 2025, rôles et administration</p></div>
+<div class="card"><div class="n mono">03</div><h3>Active Directory</h3><p>Domaine, OU, groupes, utilisateurs</p></div>
+<div class="card"><div class="n mono">04</div><h3>DHCP et DNS</h3><p>Adressage IPv4 et services réseau</p></div>
+<div class="card"><div class="n mono">05</div><h3>GPO</h3><p>Mots de passe, redirection de dossiers</p></div>
+<div class="card"><div class="n mono">06</div><h3>Virtualisation</h3><p>VMware et réseaux virtuels</p></div>
+</div>
+</div>
+</section>
+
+<section id="certifications">
+<div class="hd"><span class="pill mono">02 · Certifications</span><h2>Certifications <em>&amp; Attestations</em></h2></div>
+<p class="todo">À compléter si tu en as (attestations de formation en ligne, certifications réseau, RGPD…). Sinon cette section sera retirée.</p>
+</section>
+
+<section id="parcours">
+<div class="hd"><span class="pill mono">03 · Parcours</span><h2>Mon <em>Parcours</em></h2><p>Formation académique et expériences professionnelles.</p></div>
+<div class="seg" role="group" aria-label="Filtrer le parcours" id="tabs"><button data-t="all" aria-pressed="true">Tout voir</button><button data-t="formation" aria-pressed="false">Formation</button><button data-t="experience" aria-pressed="false">Expérience</button></div>
+<div class="cols">
+<div class="col" data-t="formation"><h3>Formation</h3>
+<div class="card"><span class="date mono">En cours</span><h4>BTS SIO option SISR</h4><div class="who">Lycée Marie Curie, Tarbes</div><p>Deuxième année : administration des systèmes et des réseaux.</p></div>
+<div class="card"><span class="date mono">À compléter</span><h4>Formation précédente</h4><p>Baccalauréat ou autre diplôme.</p></div></div>
+<div class="col" data-t="experience"><h3>Expérience</h3>
+<div class="card"><span class="date mono">À compléter</span><h4>Stages et expériences</h4><div class="who">Entreprise</div><p>Dates et missions réalisées.</p></div></div>
+</div>
+</section>
+
+<section id="projets">
+<div class="hd"><span class="pill mono">04 · Réalisations</span><h2>Mes <em>Projets</em></h2><p>Installations et configurations réalisées en formation, chacune documentée pas à pas.</p></div>
+<div class="seg f" role="group" aria-label="Filtrer les projets" id="fl"><button data-f="all" aria-pressed="true">Tous</button><button data-f="systeme" aria-pressed="false">Systèmes</button><button data-f="reseau" aria-pressed="false">Réseau</button><button data-f="annuaire" aria-pressed="false">Annuaire</button></div>
+<div class="grid">
+<article class="card pc" data-cat="systeme"><div class="th"><span>01</span>Windows 11</div><div class="pb"><h3>Installer un poste Windows 11</h3><p>Installation complète en machine virtuelle, documentée avec captures.</p><div class="ft"><div class="tags"><b>Système</b><b>VMware</b></div><button class="ex" data-open="p1">Explorer →</button></div></div></article>
+<article class="card pc" data-cat="reseau"><div class="th"><span>02</span>DHCP</div><div class="pb"><h3>Serveur DHCP pour Gal Cosmetic</h3><p>Plan d’adressage et service DHCP pour une entreprise fictive.</p><div class="ft"><div class="tags"><b>Réseau</b><b>IPv4</b></div><button class="ex" data-open="p2">Explorer →</button></div></div></article>
+<article class="card pc" data-cat="systeme annuaire"><div class="th"><span>03</span>AD DS</div><div class="pb"><h3>Domaine Descartes-Bleu</h3><p>Active Directory, DNS, GPO et redirection de dossiers.</p><div class="ft"><div class="tags"><b>Annuaire</b><b>GPO</b></div><button class="ex" data-open="p3">Explorer →</button></div></div></article>
+</div>
+</section>
+
+<section id="veille">
+<div class="hd"><span class="pill mono">05 · Veille technologique</span><h2>Veille <em>technologique</em></h2></div>
+<p class="todo">À compléter : thème choisi, sources suivies, outils de veille, articles récents et ce que j’en retiens.</p>
+</section>
+
+<section id="contact">
+<div class="hd"><span class="pill mono">06 · Contact</span><h2>Me <em>Contacter</em></h2><p>Disponible pour échanger à propos de mes projets et de ma formation.</p></div>
+<div class="ct"><div class="card"><h3>Email</h3><p class="todo" style="text-align:left">À compléter</p></div><div class="card"><h3>LinkedIn</h3><p class="todo" style="text-align:left">À compléter</p></div></div>
+</section>
+</main>
+
+<footer><div class="wrap">
+<div><a class="logo" href="#home"><i>SR</i>Sidi Amman Riffay</a><p>Étudiant en BTS SIO option SISR, lycée Marie Curie, Tarbes.</p></div>
+<div><h4>Liens rapides</h4><a href="#about">À propos</a><a href="#projets">Projets</a><a href="#veille">Veille</a></div>
+<div><h4>Contact</h4><a href="#contact">Me contacter</a><span>Tarbes, France</span></div>
+</div></footer>
+
+<dialog id="p1"><button class="btn cx" data-close>Fermer</button><h3>Installer un poste Windows 11</h3>
+<p>Installation de Windows 11 Professionnel Éducation dans une machine virtuelle, avec une documentation illustrée de captures d’écran.</p>
+<h4>Étapes réalisées</h4><ol><li>Choix de la langue et du clavier (français, AZERTY).</li><li>Option d’installation, clé de produit, licence.</li><li>Emplacement d’installation (disque de 80 Go) puis lancement.</li><li>Configuration « travail ou école » puis « joindre le domaine à la place » pour créer un compte local.</li><li>Création du compte, du mot de passe et des questions de sécurité.</li><li>Réglages de confidentialité : données obligatoires uniquement, le reste désactivé.</li></ol></dialog>
+
+<dialog id="p2"><button class="btn cx" data-close>Fermer</button><h3>Serveur DHCP pour Gal Cosmetic</h3>
+<p>Plan d’adressage et service DHCP pour une entreprise fictive de cosmétiques répartie en 5 services.</p>
+<h4>Besoin</h4><p>85 postes, 15 postes prévus, 10 serveurs et 5 imprimantes : 115 équipements. Un réseau de classe C (254 hôtes) suffit.</p>
+<h4>Ce que j’ai fait</h4><ul><li>Schéma du réseau : un switch par service, reliés à un switch central et à la salle serveur.</li><li>Adresse IP statique du serveur Windows Server 2025 : 192.168.0.1, masque 255.255.255.0.</li><li>Installation du rôle Serveur DHCP.</li><li>Étendue IPv4 de 192.168.0.10 à 192.168.0.200, passerelle 192.168.0.254.</li><li>Test : un poste Windows 11 sur un réseau virtuel dédié reçoit 192.168.0.10 (vérifié avec <code>ipconfig</code>).</li></ul></dialog>
+
+<dialog id="p3"><button class="btn cx" data-close>Fermer</button><h3>Domaine Descartes-Bleu</h3>
+<p>Installation d’Active Directory et de DNS sur le serveur SRV-AD1, organisation du domaine et centralisation des données utilisateurs.</p>
+<h4>Ce que j’ai fait</h4><ul><li>Rôle AD DS et promotion en contrôleur de domaine (nouvelle forêt, mot de passe DSRM).</li><li>Vérification du rôle DNS : il permet de retrouver le contrôleur et les postes par leur nom, et Active Directory en dépend.</li><li>Unité d’organisation, groupe <code>grp_service_administratif</code> (global, sécurité) et utilisateur membre du groupe.</li><li>Poste client renommé, DNS pointé vers le contrôleur, puis jonction au domaine.</li><li>Partage masqué « profils » sur le disque DATA, avec droits adaptés.</li><li>GPO « redirection dossier utilisateur » : le dossier Documents est redirigé vers le serveur.</li></ul>
+<div class="note">La politique de mots de passe a été volontairement assouplie pour l’exercice (5 caractères, sans complexité ni expiration). En production, on fait l’inverse.</div></dialog>
+
+<script>
+(function(){
+var r=document.documentElement,q=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+document.getElementById('tg').addEventListener('click',function(){var l=getComputedStyle(r).colorScheme==='light';r.setAttribute('data-theme',l?'dark':'light')});
+function seg(id,attr,fn){q('#'+id+' button').forEach(function(b){b.addEventListener('click',function(){q('#'+id+' button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});fn(b.dataset[attr])})})}
+seg('fl','f',function(f){q('.pc').forEach(function(c){c.classList.toggle('hide',f!=='all'&&c.dataset.cat.split(' ').indexOf(f)<0)})});
+seg('tabs','t',function(t){q('.col').forEach(function(c){c.classList.toggle('hide',t!=='all'&&c.dataset.t!==t)})});
+q('[data-open]').forEach(function(b){b.addEventListener('click',function(){document.getElementById(b.dataset.open).showModal()})});
+q('[data-close]').forEach(function(b){b.addEventListener('click',function(){b.closest('dialog').close()})});
+q('dialog').forEach(function(d){d.addEventListener('click',function(e){if(e.target===d)d.close()})});
+})();
+</script>
+</body>
+</html>
